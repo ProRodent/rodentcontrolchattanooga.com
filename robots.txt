@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Disallow common bot traps and admin paths (none exist here, but defensive)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+
+# Block common AI scrapers we don't want training on the site without permission
+# (Comment these out if you want full LLM training crawl)
+# User-agent: GPTBot
+# Disallow: /
+# User-agent: CCBot
+# Disallow: /
+
+Sitemap: https://rodentcontrolchattanooga.com/sitemap.xml
